@@ -100,7 +100,7 @@ while True:
             round+=1
             continue
 
-#Prueba GITHUB
+#Prueba GITHUB remoto
 
 
 #Para tributar un determinado impuesto se debe ser mayor de 16 años y tener unos ingresos iguales o superiores a 1000 € mensuales. 
