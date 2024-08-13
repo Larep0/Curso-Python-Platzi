@@ -94,7 +94,7 @@ while True:
         print ('Elejiste PERDER  o no sabes leer')
     opcion=(input('Quieres intentarlo otraa vez ti? : (Y/N)  ====>: '))
     if opcion.upper() == 'N':
-            print('HASTA LA PROXIMA')
+            print('HASTA LA PROXIMA CHAYANNE')
             break
     elif opcion.upper() =='Y':
             round+=1
