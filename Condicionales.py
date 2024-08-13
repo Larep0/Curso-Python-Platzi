@@ -69,7 +69,7 @@ while True:
         a = PIEDRA
         b = PAPEL
         c = TIJERAS
-        ''')
+        ''') 
     Pc = random.choice (opc)
     user= input('Selecciona tu opcion a,b,c   =====>>: ')
     user=user.lower()
