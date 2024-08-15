@@ -68,7 +68,7 @@ while True:
     print('Ronda Numero', round)
     print('*'*10)
 
-    print(''' ****   Vamos a jugar al cachipum ****
+    print(''' ****   Vamos a jugar a skibidi toilet tycoon ****
         Seleciona una de las siguientes opciones:
         a = PIEDRA
         b = PAPEL
@@ -82,6 +82,8 @@ while True:
         print (f'El PC a selecionado {Pc}')
     if user==Pc:
         print('Empatamiento')
+        print (f'Elejiste la opcion {user}')
+        print (f'El PC a selecionado {Pc}')
     elif user=='a' and Pc == 'b':
         print(f'Gana el PC con la opcion {Pc} "PAPEL", superando al USUARIO con  {user} "PIEDRA"')
     elif user=='a' and Pc == 'c':
@@ -97,7 +99,7 @@ while True:
     else:
         print ('Elejiste PERDER  o no sabes leer')
     opcion=(input('Quieres intentarlo otraa vez ti? : (Y/N)  ====>: '))
-    if opcion.upper() == 'N':
+    if opcion.upper() == 'N' or opcion == 'no' or opcion == ' NO' or opcion == 'No' or opcion == 'nO':
             print('HASTA LA PROXIMA CHAYANNE')
             break
     elif opcion.upper() =='Y':
