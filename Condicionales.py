@@ -102,7 +102,7 @@ while True:
     if opcion.upper() == 'N' or opcion == 'no' or opcion == ' NO' or opcion == 'No' or opcion == 'nO':
             print('HASTA LA PROXIMA CHAYANNE')
             break
-    elif opcion.upper() =='Y':
+    elif opcion.upper() =='Y': #Hay que depurar (no condiciona correctamente )
             round+=1
             continue
 
