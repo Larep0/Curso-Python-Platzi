@@ -67,6 +67,7 @@ while True:
     print('*'*10)
     print('Ronda Numero', round)
     print('*'*10)
+    print('Soy Un Imbecil '*10)
 
     print(''' ****   Vamos a jugar a skibidi toilet tycoon ****
         Seleciona una de las siguientes opciones:
