@@ -641,13 +641,15 @@ for filas in matriz:
 #No tienen un orden
 #No pueden tener elementos duplicados
 
+'''
+
 set_countries = {'Chile', 'Argentina', 'Brasil'} # no tiene un par key-value, así me doy cuenta que es un set, un conjunto.
 print(set_countries)
 print(type(set_countries))
 
 # si yo pongo algo repetido, él me lo quita al imprimir
-set_countries2 = {'Chile', 'Argentina', 'Brasil', 'Chile'}
-print (set_countries2) # {'Chile', 'Argentina', 'Brasil'}
+set_countries2 = {'Alemania', 'Italia', 'Francia', 'Belgica','Alemania'}
+print (set_countries2) # {'Alemania', 'Italia', 'Francia', 'Belgica'}
 
 # puede ser mixto. El set se ordena solo, lo importante es lo que tengo dentro.
 set_types = {1, 'hola', False, 12.12}
@@ -678,7 +680,7 @@ print (unique_numbers)
 #remove(): Elimina un elemento y si este no existe lanza el error “keyError”.
 #pop(): Nos devuelve un elemento aleatorio y lo elimina y si el conjunto está vacío lanza el error “key error”.
 #clear(): Elimina todo el contenido del conjunto.
-
+#CRUD
 
 set_countries = {'col', 'mex', 'bol'}
 
@@ -710,4 +712,66 @@ set_countries.discard('arg')
 print(set_countries)
 set_countries.add('arg')
 print(set_countries)
+set_countries.add('Chile')
+print(set_countries)
+set_countries.clear()
+print(set_countries)
+set_countries={'Chile','Argentina','Peru','Colombia','Mexico'}
+print(type (set_countries))
+size = len(set_countries)
+print (size)
+set_countries.add('Uruguay')
+size = len(set_countries)
+print (size)
+set_countries2.add('Espana')
+set_countries2.discard('Espana')
+print(set_countries)
+print(set_countries2)
+print('Belgica' in set_countries2)
+set_countries2.add ('Chile')
+print(set_countries2)
 
+#Operaciones con conjuntos
+#Union
+countries = set_countries.union(set_countries2) #union con con metodo .union()
+print(countries)
+print (set_countries2 | set_countries) #union con operador |
+#Interseccion
+interseccion = set_countries.intersection (set_countries2) #interseccion con con metodo .intersection()
+print(interseccion)
+print (set_countries & set_countries2) #Interseccion con operador &
+#Diferencia
+
+print(set_countries)
+print(set_countries2)
+diferencia = set_countries.difference(set_countries2) #Diferencia con metodo .difference ()
+print (set_countries - set_countries2) #Con Operador  - 
+print (diferencia)
+#otro ejemplo porque no me quedaba claro
+set_a = {'Col', 'Mex','Bol'}
+set_b = {'pe', 'Bol'}
+
+set_c = set_a.difference(set_b)
+print(set_c)
+print(set_a - set_b)
+#difference(set): Realiza la operacion “difference” 
+#entre dos conjuntos. La diferencia entre dos conjuntos es restar 
+#los elementos del segundo conjunto al primero. Esta operación tambien se puede realizar con el signo “-”: set_a - set_b.
+
+# symmetric_difference es hacer una unión, sin los elementos en común
+set_c = set_a.symmetric_difference (set_b) # Con metodo
+
+print(set_c) 
+print(set_a ^ set_b) #Con operador ^
+
+
+'''
+#Del curso de Linux, Cracion de tiempo en pantalla
+import time
+from datetime import datetime
+
+while True:
+    with open("/home/retamal/Curso_Python_Ubuntu/timestamp.txt", "a") as f:
+        f.write("\Timestamp:" + str (datetime.now()))
+        f.close()
+    time.sleep(1)
